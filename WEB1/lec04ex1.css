@@ -1,0 +1,20 @@
+/*#intro {font-style: italic;}
+p{font-size: 10pt; font-weight:bold; text-decoration:underline;}
+.term {font-size : 15pt; font-style: italic; text-decoration : underline;}*/
+
+p {font-size: 10pt;}
+.red1 {color: red; font-style:italic;}
+strong.red1 {font-size: 12pt}
+#next {color : blue; text-align:center;}
+
+a:link{color :rgba(95, 14, 102, 0.87);}
+a:visited{color:green;}
+/*h3:before{content:"😊"; color:blue;}
+h3:after{content:"😜"; font-size:10pt;}*/
+
+h3 {color : red; background-color: #90ff90}
+h3:after{content : "(▶sblim)"; font-size :10pt; background-color: yellow}
+#first{background-image:url(flower.png); background-repeat:repeat-x; background-size:20%}
+#second{background-image:url(flower.png);}
+#third{background-image:url(flower.png); background-repeat:no-repeat;
+        background-position:center bottom}
