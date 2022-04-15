@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+ul {
+    list-style:none;
+}
+
+body {
+    line-height:2.0;
+}
+
+.fontbold {
+    font-weight:bold;
+}
+span.fontboldline {
+    font-weight:bold;
+    text-decoration:underline;
+}
+.fontred {
+    color:red;
+}
+.fontboldlineblue {
+    font-weight:bold;
+    text-decoration:underline;
+    color:blue;
+}
+table, td, th {
+    border : 1.5px solid black;
+    border-collapse : collapse;
+}
+table {
+    width:700px;
+    height:200px;
+}
+th {
+    background-color: rgb(217,217,217);
+}
+th,td {
+    text-align:center;
+}
+
+@font-face {
+    font-family: 'ROKAFSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box-solid {
+    text-align: center;
+    border-width: 15px;
+    width:900px;
+    height: 1200px;
+    margin: 10px;
+    color:rgb(221,236,202);
+    line-height:400%;
+    border-style: solid;
+}
+span.p1 {
+    font-family:'ROKAFSansBold',;
+    color : rgb(242,149,191); 
+    font-size : 35pt;
+    text-shadow: 2px 3px 1px rgb(167,167,167)}
+
+span.p2 {
+    font-family:'ROKAFSansBold';
+    color : rgb(255,232,181);
+    font-size : 35pt;
+    text-shadow: 2px 3px 1px rgb(167,167,167)}
+
+span.p3 {
+    font-family:'ROKAFSansBold';
+    color : rgb(0,0,0);
+    font-size : 35pt;
+    text-shadow: 2px 3px 1px rgb(167,167,167)}
+
+span.p4 {
+    font-family:'ROKAFSansBold';
+    color : rgb(183,228,249);
+    font-size : 35pt;
+    text-shadow: 2px 3px 1px rgb(167,167,167)}
+
+.flower1 {
+    overflow: hidden;
+    position:absolute;
+    margin: 10px;
+    left: 20px;
+}
+.line1{
+    overflow: hidden;
+    position:absolute;
+    margin: 10px;
+    left: 100px;
+    top: 235px;
+}
+.flower2 {
+    overflow: hidden;
+    position:absolute;
+    margin: 10px;
+    left: 25px;
+    top:470px;
+}
+.line2 {
+    overflow: hidden;
+    position:absolute;
+    margin: 10px;
+    left: 100px;
+    top: 480px;
+}
+@font-face {
+    font-family : "TimesNewRoman";
+    src: url("../fonts/TimesNewRoman/TimesNewRoman.woff") format("woff");
+    font-style:normal;
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+    font-family:"Malgun Gothic";
+    src: url("../fonts/Malgun Gothic/Malgun Gothic.woff") format("woff");
+    font-style:normal;
+    unicode-range:U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font {
+    z-index:1;
+    font-family:'MinSans-Medium',"Malgun Gothic";
+    color:black;
+    font-size:17pt;
+    text-align: left;
+    line-height: 200%;
+    margin:50px;
+}
+
+.box1 {
+    overflow:hidden;
+    position:relative;
+    margin:30px;
+    left:-40px;
+    top:40px;
+}
+
+.box2 {
+    overflow:hidden;
+    position:relative;
+    margin:30px;
+    left:-40px;
+    top:20px;
+}
+
+#button {
+    position:relative;
+    width: 200px;
+    height:50px;
+    left : -330px;
+    top: -100px;
+    background-color : skyblue;
+    border:none;
+    font-family:MinSans-Medium;
+    color:white;
+    border-radius:15px;
+}
+#button:hover {
+    box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset,
+     -200px 0 0 0 rgba(0,0,0,0.25) inset;
+}
+
+#button2 {
+    position:relative;
+    background-color : skyblue;
+    border:none;
+    font-family:MinSans-Medium;
+    color:white;
+    border-radius:15px;
+}
+
+#button2:hover {
+    box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset,
+     -200px 0 0 0 rgba(0,0,0,0.25) inset;
+}
+
+.container {
+
+    position:absolute;
+    overflow:hidden;
+    left:50px;
+    width:330px;
+    height:440px;
+    opacity:0.2;
+    top:800px;
+    left:600px;
+}
+
+.container > .backgroundflower {
+
+    overflow:hidden;
+}
+
+.backgroundflower {
+
+    overflow:hidden;
+    width:500px;
+    height:500px;
+}
