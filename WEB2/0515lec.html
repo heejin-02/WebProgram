@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            11주차
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var stopped = false;
+            function start() {
+                dom = document.getElementById("sec");
+                dom.value = parseInt(dom.value) + 1;
+                if(!stopped)setTimeout(start,1000)
+            }
+        </script>
+
+        <button id = "btn1">Button1</button>
+        <button id = "bt2">Button2</button>
+        
+        <p id = "txt">aa</p>
+
+        <script>
+            document.getElementById("bt1").onclick = function() { myEventHandler(12345, '오희진')};
+            document.getElementById("btn2").addEventListener("click",function() { my})
+        </script>
+        <h2>Stopwatch</h2>
+        <form action ="">
+            <input type ="button"value ="Start" onclick ="stopped =false; setTimeout(start,1000);"
+            />
+            <input type ="button" value ="Stop" onclick ="stopped=true;"/>
+            <input type ="reset"/><br><br>
+
+            <input id ="sec" type ="text" value ="0" size="2"/> seconds
+        </form>
+
+
+    </body>
+</html>

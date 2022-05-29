@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to the JavaScript
+        </title>
+    </head>
+    <body>
+        <script type = "text/JavaScript">
+            document.write("Hello, welcom to the JavaScrpit World!<br/>");
+           
+           //자바스크립트 변수 선언
+            var index, name ="모바일 웹";
+            var start = 0, end = 100.0;
+            var message , condition, sender,receiver;
+            var a = "3";
+            var b = 2;
+            c = a+3+b;
+            d = a+b;
+            document.write(c+"<br/>");
+            document.write(d);
+
+            //자바스크립트 문자열 붙이기 연산
+            var first_name = "Steve";
+            var last_name ="Jobs";
+            var full_name1 =first_name + " "+last_name;
+            var full_name2 =last_name + ", " + first_name;
+            document.write("<br/>full_name1 :"+full_name1);
+            document.write("<br/>full_name2 :"+full_name2);
+
+            //변수 형변환
+            var length = 123, length_num, length_str;
+            length_num = length + 10;
+            length_str = length.toString() + 10;
+            document.write("<br/>Length in Number:"+length_num +"cm");
+            document.write("<br/>Length in String:"+length_str +"cm" +"<br/>");
+            var num = parseInt(length_str) + 20;
+            document.write("Length in Integer :" + num + "cm");
+
+            //대화상자로 메시지 출력
+            alert("HTML5 프로그래밍\n웹사이트로 이동합니다.");
+            //확인 입력받기
+            var answer = confirm("주문한 서적을 결제하시겠습니까?");
+            document.write("<br/>Answer ="+answer +"<br/>");
+            //키보드로부터 문자열 입력받기
+            var answer =prompt("서적 제목을 입력해주세요.","모바일 멀티미디어");
+            document.write("Answer ="+answer+"<br/>");
+
+            document.write("<table border =1>")
+            document.write("<caption> 책 주문 입력 내용</caption>");
+            document.write("<tr>");
+            document.write("<th> 제목 </th>");
+            document.write("</tr>");
+
+            var book1 = "IT: 컴퓨터와 IT 기술의 이해 [개정판-2판]";
+            var book2 = "SNS: 소셜미디어의 이해와 활용";
+            var book3 = "Multimedia: 멀티미디어 배움터 2.0";
+
+            var book_list = book1 + "\n" + book2 + "\n" + book3;
+            var choice = prompt("키워드를 입력하세요...\n"+ book_list,"");
+
+            switch (choice) {
+                case "IT":
+                    title = book1;
+                    break;
+                case "SNS":
+                    title = book2;
+                case "Multimeadia":
+                    title = book3;
+                default:
+                    alert("리스트에 없는 책을 선택하셨습니다.");
+                    title ="";
+            }
+            document.write("<tr>");
+            document.write("<td>" + title + "</td>");
+            document.write("</tr>");
+            document.write("</table>");
+
+            //사용자 정의 함수 
+            function show_alert() {
+                alert("5 seconds passed...");
+            }           
+
+            function show_message() {
+                document.write("3 seconds passed...");
+            }
+
+            //시간 지연 함수
+            //setTimeout(show_alert, 5000);
+            //setTimeout(show_message,3000);
+
+            function add(a,b) {
+                return (a+b);
+            }
+
+            result1 = add(12,34); //12+34 = 46
+            result2 = add("56","78"); //"56" +"78" = 5678
+            result3 = add("Steve","Jobs");
+            document.write("result1 =" + result1 +"<br/>");
+            document.write("result2 =" + result2 + "<br/>");
+            document.write("result3 =" + result3 + "<br/>");
+            </script>
+    </body>
+</html>
